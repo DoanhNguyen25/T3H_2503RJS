@@ -1,0 +1,37 @@
+.demo-display {
+  display: inline-block;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  /* padding: 20px; */
+}
+
+.demo-display:nth-child(2) {
+  background-color: green;
+  margin: 20px 0;
+  width: 200px;
+  height: 200px;
+}
+
+.demo-display:nth-child(1) {
+  background-color: blue;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 200px;
+  align-content: center;
+}
+
+.flex-item {
+  width: 100px;
+  background-color: green;
+  margin: 0 10px;
+}
+/* flex  */
+
+/* flex container:flex-direction: column;
+ main axis  luôn luôn trục main axis sẽ nằm ngang */
+/* flex item:  
+cross axis*/

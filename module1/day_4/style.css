@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  /* 1rem = 10px */
+  /* 62,5% của 16px */
+  /* mặc định của trình duyệt là 16px */
+}
+/* Đơn vị trong Css nó sẽ được chia làm 2 loại: Tương đối và Tuyệt đối */
+
+/* đơn vị tuyệt đối */
+/* là đơn vị nó phản ánh chính xác kích thước phần tử mong muốn được hiển thị lên trình duyệt */
+/*  đơn vị phổ biến hay sử dụng là px vd: margin:20px */
+
+/* đơn vị tương đối */
+/* 
+
+em : nó sẽ luôn luôn lấy kích thước của phần tử cha để làm giá trị ban đầu
+
+
+vd:1em = 20px */
+
+/* rem: tương tự như tk em nhưng có 1 điểm lưu ý là 
+lấy kích thước của tk cha ( html) để làm giá trị ban đầu
+vd: 1rem = 16px
+
+*/
+
+/* %: 20% của phần tử cha
+
+
+/* break point: các cái điểm nó css nó sẽ được áp dụng */
+.demo-responsive {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo-responsive {
+    background-color: #ff0000;
+  }
+}
