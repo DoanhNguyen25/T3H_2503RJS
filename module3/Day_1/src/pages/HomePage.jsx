@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className='flex justify-around flex-wrap '>HomePage</div>
   )
 }
 
