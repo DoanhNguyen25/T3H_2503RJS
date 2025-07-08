@@ -1,8 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
+import Header from "../components/Header";
 
 const MainLayout = ({ children }) => {
   return (
     <>
+      <Header />
       <div className="grid min-h-screen grid-cols-4">
         <aside className="col-span-1" aria-label="Sidebar">
           <div className="h-full overflow-y-auto bg-gray-100 py-4 px-3 shadow-lg">

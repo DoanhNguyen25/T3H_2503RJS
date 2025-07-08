@@ -4,12 +4,17 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import NewsPage from "./pages/NewsPage";
 import NewsDetail from "./pages/NewsDetail";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   const routes = useRoutes([
     {
       path: "/",
-      element: <MainLayout />,
+      element: (
+        <ThemeProvider>
+          <MainLayout />
+        </ThemeProvider>
+      ),
       children: [
         { path: "", element: <HomePage /> },
         {
